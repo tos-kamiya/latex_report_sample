@@ -1,16 +1,18 @@
-\RequirePackage{plautopatch} % インポートしているパッケージに日本語対応の代替物があればそれをインポートするようにするコマンド（冒頭に書く）
-
 % 論文誌のルールに従うように注意する。
 % * ドキュメントクラスなど: 必ず論文誌が指定しているものを使う。
 % * 句読点: 論文誌によって，「，」「。」であったり，「，」「．」あったりする。全角文字と半角文字の使い分けが要求されることもあるので注意。
 % * タイトル，著者，日付など: 論文誌によって英文についても記載するようになっていたりと様々。
 % * 文献の書き方: 論文誌によっては指定がある。
 
+% \RequirePackage{plautopatch} % エンジンとしてplatex利用時に、パッケージの日本語対応を行う（冒頭に書く）
+% （事前に plautopatch をインストールしておくことが必要）
+
 \documentclass[dvipdfmx]{jsarticle}
 % \documentclass[dvipdfmx, twocolumn]{jsarticle} % 2段組みにする場合
 
 \usepackage{graphicx} % 画像ファイルの取り込み \includegraphics コマンド
 \usepackage{hyperref} % ハイパーリンク \href コマンド，\url コマンド
+\usepackage{pxjahyper} % hyperrefを日本語対応させる（文字化けさせない）
 
 \begin{document}
 
