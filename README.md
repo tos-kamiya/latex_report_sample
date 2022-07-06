@@ -34,7 +34,7 @@ $ ptex2pdf -e -l -od '-f ptex-ipaex.map' report_sample.tex
 
 ## 謝辞
 
-このリポジトリでは次のファイルを再利用います。感謝いたします。
+このリポジトリでは次のファイルを再利用させていただいています。感謝いたします。
 
 * ファイル `latexmkrc` は doraTeX さんの [Overleaf v2 で日本語を使用する方法](https://doratex.hatenablog.jp/entry/20180503/1525338512) のものを利用しました。
 * ファイル `golden_egg.png` は いらすとや さんの [金の卵のイラスト ](https://www.irasutoya.com/2017/02/blog-post_426.html) を利用しました。
