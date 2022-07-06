@@ -13,7 +13,7 @@
 TeXLiveがインストールされている環境で、ファイルを置いたディレクトリに移動して、次のコマンドラインを実行します。
 
 ```sh
-$ ptex2pdf -e -l -od '-f uptex-ipaex.map' report_sample.tex
+$ ptex2pdf -e -l -od '-f ptex-ipaex.map' report_sample.tex
 ```
 
 ※ 相互参照を正しくレンダリングするには2回コンパイルする必要があります。
