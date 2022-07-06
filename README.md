@@ -18,6 +18,10 @@ $ ptex2pdf -e -l -od '-f uptex-ipaex.map' report_sample.tex
 
 ※ 相互参照を正しくレンダリングするには2回コンパイルする必要があります。
 
+※ `-e -l`はLaTeXのコンパイラとしてplatexを使う指定です。
+
+※ `-od '-f uptex-ipaex.map'`は生成するPDFにフォントを埋め込む指定です（つけないと、PDFのサイズは小さくなりますが、見る環境によって文字の見た目が変わります）
+
 ### Overleafを利用する場合
 
 (1) プロジェクトを作成し、すべてのファイルをアップロードしてください。`report_sample.tex`の中身は`main.tex`にコピーしてください。
