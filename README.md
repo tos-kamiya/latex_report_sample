@@ -6,6 +6,8 @@
 * `latexmkrc` オンラインのLaTeX環境 [Overleaf](https://www.overleaf.com) でpLaTeXを利用するための設定
 * `golden_egg.png` 画像ファイルの取り込みの例のための画像ファイル
 
+→ [雛形から生成したPDF](https://tos-kamiya.github.io/latex_report_sample/report_sample.pdf)
+
 ## PDFの生成
 
 ### ptex2pdfコマンドを利用する場合
