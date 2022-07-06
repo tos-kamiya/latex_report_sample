@@ -1,3 +1,5 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 # LaTeXで作成するレポートの雛形
 
 レポートを作るときに、元になるファイルを提供しています。
@@ -39,3 +41,9 @@ $ ptex2pdf -e -l -od '-f ptex-ipaex.map' report_sample.tex
 * ファイル `latexmkrc` は doraTeX さんの [Overleaf v2 で日本語を使用する方法](https://doratex.hatenablog.jp/entry/20180503/1525338512) のものを利用しました。
 * ファイル `golden_egg.png` は いらすとや さんの [金の卵のイラスト ](https://www.irasutoya.com/2017/02/blog-post_426.html) を利用しました。
 * ファイル `.gitignore` は <https://github.com/github/gitignore/blob/main/TeX.gitignore> を利用しました。
+
+---
+
+→ <a href="https://github.com/tos-kamiya/latex_report_sample"><i class="fa-brands fa-github"></i>ホームページ</a>
+
+
