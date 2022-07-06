@@ -11,7 +11,7 @@
 % \documentclass[dvipdfmx, twocolumn]{jsarticle} % 2段組みにする場合
 
 \usepackage{graphicx} % 画像ファイルの取り込み \includegraphics コマンド
-\usepackage{hyperref} % ハイパーリンク \href コマンド，\url コマンド
+\usepackage{hyperref} % ハイパーリンク&PDFのブックマーク \href コマンド，\url コマンド
 \usepackage{pxjahyper} % hyperrefを日本語対応させる（文字化けさせない）
 
 \begin{document}
@@ -75,6 +75,8 @@
 % 上の表も VSCode拡張である LaTeX Table Helperhttps://marketplace.visualstudio.com/items?itemName=Lw-lonely.latex-table-helper により作成したものです。
 
 % 文献リストの例
+\phantomsection \addcontentsline{toc}{section}{参考文献} % 参考文献をPDFのブックマークに入れる設定
+\label{sec:biblio}
 \begin{thebibliography}{99} % 「99」はPDFに表示するときの数字の幅を2桁にするための記述。文献が100個以上あるときは「999」とする。
 \bibitem{kakenhi_latex} 山中卓: 科研費LaTeX \url{https://osksn2.hep.sci.osaka-u.ac.jp/~taku/kakenhiLaTeX/} (2022年7月6日取得). % URLの引用
 \bibitem{teramura2009} 寺村輝夫, 和歌山静子: ぼくは王様 - ぞうのたまごのたまごやき, 理論社, 2009年1月. % 書籍の引用
