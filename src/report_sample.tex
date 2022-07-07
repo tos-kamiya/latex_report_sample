@@ -11,8 +11,12 @@
 % \documentclass[dvipdfmx, twocolumn]{jsarticle} % 2段組みにする場合
 
 \usepackage{graphicx} % 画像ファイルの取り込み \includegraphics コマンド
-\usepackage{hyperref} % ハイパーリンク&PDFのブックマーク \href コマンド，\url コマンド
-\usepackage{pxjahyper} % hyperrefを日本語対応させる（文字化けさせない）
+
+\usepackage{url} % \url コマンド（特殊文字が入ったURLを書きやすくする）
+
+% 上のurlパッケージの代替として、次のhyperrefとpxjahyperを利用すればリンクとして動作するURLを書くことができる。ただし、citesortパッケージと相性問題があり、同時には使えない。
+% \usepackage{hyperref} % ハイパーリンク&PDFのブックマーク \href コマンド，\url コマンド
+% \usepackage{pxjahyper} % hyperrefを日本語対応させる（文字化けさせない）
 
 \begin{document}
 
@@ -26,7 +30,7 @@
 
 この文書は，レポートや論文の書き方を示すためのサンプルです。
 タイトルを「象の卵の重さと長径に関する考察」としてあるのは，あえて荒唐無稽な内容とすることで，
-間違えて修正せずに提出されてしまう\href{https://twitter.com/taku_ymnk/status/392959147974471681?s=20&t=3p7I92WEGvoPpj_7d-dtyA}{事故}を防ぐためです。 % URLのリンクを文書に埋め込む例
+間違えて修正せずに提出されてしまう事故\footnote{参考ツイート \url{https://twitter.com/taku_ymnk/status/392959147974471681}}を防ぐためです。 % footnoteの例
 なお，本稿のタイトルを見て``d\'{e}j\`{a}vu''に襲われた方はおそらく研究者だと思われます。 % ダブルクオート、アクセントの利用例
 
 象の卵の存在は現在も未確認であり，その外見については現在も想像するしかない。図\ref{fig:golden_egg}に，想像上の象の卵の外見を示す。 % 図の番号を参照する例
@@ -60,7 +64,7 @@
 % 表の例
 \begin{table}[htbp]
   \centering
-  \caption{卵の大きさ}
+  \caption{動物の種類毎の個体や卵のデータ}
   \label{tab:egg_sizes} % 表の相互参照のラベルの例
   \begin{tabular}{|c|r|r|r|}
     \hline
@@ -75,7 +79,6 @@
 % 上の表も VSCode拡張である LaTeX Table Helperhttps://marketplace.visualstudio.com/items?itemName=Lw-lonely.latex-table-helper により作成したものです。
 
 % 文献リストの例
-\phantomsection \addcontentsline{toc}{section}{参考文献} % 参考文献をPDFのブックマークに入れる設定
 \begin{thebibliography}{99} % 「99」はPDFに表示するときの数字の幅を2桁にするための記述。文献が100個以上あるときは「999」とする。
 \bibitem{kakenhi_latex} 山中卓: 科研費LaTeX \url{https://osksn2.hep.sci.osaka-u.ac.jp/~taku/kakenhiLaTeX/} (2022年7月6日取得). % URLの引用
 \bibitem{teramura2009} 寺村輝夫, 和歌山静子: ぼくは王様 - ぞうのたまごのたまごやき, 理論社, 2009年1月. % 書籍の引用
