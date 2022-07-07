@@ -2,6 +2,8 @@
 
 レポートを作るときに、元になるファイルを提供しています。
 
+`src`ディレクトリがソースファイルです。
+
 * `report_sample.tex` レポート本文のソースファイル
 * `latexmkrc` オンラインのLaTeX環境 [Overleaf](https://www.overleaf.com) でpLaTeXを利用するための設定
 * `golden_egg.png` 画像ファイルの取り込みの例のための画像ファイル
@@ -12,7 +14,7 @@
 
 ### ptex2pdfコマンドを利用する場合
 
-TeXLiveがインストールされている環境で、ファイルを置いたディレクトリ(`src`)に移動して、次のコマンドラインを実行します。
+TeXLiveがインストールされている環境で、`src`ディレクトリに移動して次のコマンドラインを実行すると、そのディレクトリにPDFファイルが生成されます。
 
 ```sh
 $ ptex2pdf -e -l -od '-f ptex-ipaex.map' report_sample.tex
@@ -26,7 +28,7 @@ $ ptex2pdf -e -l -od '-f ptex-ipaex.map' report_sample.tex
 
 ### Overleafを利用する場合
 
-(1) プロジェクトを作成し、すべてのファイルをアップロードしてください。`report_sample.tex`の中身は`main.tex`にコピーしてください。
+(1) プロジェクトを作成し、`src`ディレクトリ内のすべてのファイルをアップロードしてください。`report_sample.tex`の中身は`main.tex`にコピーしてください。
 
 (2) メニューから「Settings」の「Compiler」を「LaTeX」に変更してください。
 
